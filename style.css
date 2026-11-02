@@ -124,3 +124,17 @@ section{padding:64px 0}
 .ig:hover{transform:scale(1.08)}
 .ig svg{width:32px;height:32px}
 .toast{bottom:170px}
+/* ===== Rating summary card (polished) ===== */
+.sum{padding:34px 28px 28px;text-align:center;position:relative;overflow:hidden;box-shadow:0 18px 40px rgba(20,16,10,.25)}
+.sum::before{content:"";position:absolute;top:-60px;left:50%;width:220px;height:220px;transform:translateX(-50%);background:radial-gradient(circle,rgba(246,215,122,.22),transparent 70%);pointer-events:none}
+.sum b{position:relative;display:inline-block;font-size:4.6rem;font-weight:700;line-height:1;background:linear-gradient(135deg,#fff0b3,#f6d77a 40%,#d4a017);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sum b::after{content:" / 5";font-family:'Manrope',sans-serif;font-size:1.05rem;font-weight:600;color:#bfae86;-webkit-text-fill-color:#bfae86;margin-left:4px}
+.sum .stars{margin:12px 0 10px;font-size:1.7rem;letter-spacing:6px;color:var(--gold2);text-shadow:0 2px 12px rgba(212,160,23,.5)}
+.sum small{display:inline-block;margin:0 auto;padding:6px 16px;border-radius:999px;background:rgba(246,215,122,.12);border:1px solid rgba(246,215,122,.25);color:#eadfc4;font-size:.85rem;font-weight:600}
+.bars{margin:24px 0 0;padding-top:20px;border-top:1px solid rgba(246,215,122,.2);text-align:left}
+.bars div{display:grid;grid-template-columns:34px 1fr 26px;align-items:center;gap:12px;margin:10px 0;font-size:.88rem}
+.bars div span:first-child{color:var(--gold2);font-weight:700;white-space:nowrap}
+.bars div span:last-child{color:#dccfae;text-align:right;font-weight:600}
+.bars i{height:8px;border-radius:99px;background:rgba(255,255,255,.12)}
+.bars em{border-radius:99px;background:linear-gradient(90deg,#f6d77a,#d4a017);min-width:0;transition:width .6s ease}
+@media(max-width:860px){.sum{padding:28px 20px 22px}.sum b{font-size:3.8rem}}
